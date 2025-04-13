@@ -1,0 +1,40 @@
+title: KH2 Pure Vanilla
+description: Vanilla seed to play KH2 with GoA mods.
+assets:
+  - name: icon.png
+    method: copy
+    source:
+      - name: icon.png
+  - method: binarc
+    multi:
+      - name: msg/us/jm.bar
+      - name: msg/uk/jm.bar
+    name: msg/jp/jm.bar
+    source:
+      - method: kh2msg
+        name: jm
+        source:
+          - language: en
+            name: jm.yml
+        type: list
+  - method: binarc
+    name: 00battle.bin
+    source:
+      - method: listpatch
+        name: fmlv
+        source:
+          - name: FmlvList.yml
+            type: fmlv
+        type: List
+      - method: listpatch
+        name: lvup
+        source:
+          - name: LvupList.yml
+            type: lvup
+        type: List
+      - method: listpatch
+        name: plrp
+        source:
+          - name: PlrpList.yml
+            type: plrp
+        type: List
